@@ -1,0 +1,7 @@
+<?php
+namespace App\Repositories;
+
+interface ReportRepositoryInterface
+{
+    public function getAll();
+}

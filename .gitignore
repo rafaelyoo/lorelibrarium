@@ -1,0 +1,41 @@
+# Composer
+/vendor/
+/composer.lock
+
+# Node (caso use frontend com Inertia ou similar)
+node_modules/
+/npm-debug.log
+yarn.lock
+pnpm-lock.yaml
+
+# Ambiente
+.env
+
+# IDEs
+.idea/
+*.sublime-project
+*.sublime-workspace
+.vscode/
+
+# Logs e caches
+storage/*.key
+storage/logs/*
+storage/framework/*
+bootstrap/cache/*
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+
+# PHPStorm
+.phpstorm.meta.php
+
+# Arquivos de debug / backup
+*.bak
+*.tmp
+
+# Banco de dados local
+*.sqlite
