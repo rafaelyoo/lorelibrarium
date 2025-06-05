@@ -76,7 +76,8 @@ Composer é o gerenciador de dependências do PHP.
 # Suba os containers do Docker
 docker-compose up -d
 
-# Instale as dependências do PHP
+# Instale as dependências do PHP dentro da pasta lorelibrarium
+cd lorelibrarium
 composer install
 
 # Instale as dependências do frontend
@@ -88,6 +89,20 @@ cp .env.example .env
 # Rode as migrações
 docker exec -it lorelibrarium_app php artisan migrate
 
+# Rode o comando para gerar a chave
+docker exec -it lorelibrarium_app php artisan key:generate
+
+# Dê permissão na pasta
+sudo chown -R $USER:docker lorelibrarium/
+sudo chmod -R 777 lorelibrarium/storage
+sudo chmod -R 777 lorelibrarium/bootstrap
+
 # Rode o "npm run dev" na pasta do projeto lorelibrarium
 npm run dev
+
+# Conecte no banco com as credências no .env.example utilizando 
+# o host localhost e crie a view do arquivo sql/view.sql
+
+# Para rodar os testes 
+docker exec -e XDEBUG_MODE=coverage -it lorelibrarium_app php artisan test --coverage
 ```
