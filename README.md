@@ -4,6 +4,35 @@ Sistema de gerenciamento e organização de livros, autores e assuntos relaciona
 
 ---
 
+# Projeto Laravel + Vue Starter Kit
+
+Este projeto é um kit inicial para desenvolvimento web utilizando **Laravel** no backend e **Vue.js** no frontend, com foco em desenvolvimento moderno, SSR (Server Side Rendering) e integração fluida entre as tecnologias.
+
+## ✨ Tecnologias Utilizadas
+
+### Backend
+- **PHP** (^8.2)
+- **Laravel** (^12.0)
+- **Inertia.js** (inertia-laravel)
+- **Laravel Snappy** (Geração de PDFs)
+- **Laravel Sail** (Ambiente de desenvolvimento)
+
+### Frontend
+- **Vue.js** (^3.5)
+- **Vite** (build e hot reload)
+- **Tailwind CSS** (com plugins)
+- **Reka UI** (componentes prontos)
+- **Lucide Vue Next** (ícones SVG)
+- **Tw Animate CSS** (animações)
+- **Ziggy JS** (rotas Laravel no JavaScript)
+
+### Ferramentas de Qualidade e Testes
+- **ESLint** (padronização de código)
+- **Prettier** (formatação automática)
+- **PHPUnit** (testes PHP)
+- **Mockery** (mocks e testes)
+- **FakerPHP** (dados fictícios para testes)
+
 ## 🚀 Requisitos
 
 ### 🐳 Docker
