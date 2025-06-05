@@ -126,6 +126,9 @@ sudo chown -R $USER:docker lorelibrarium/
 sudo chmod -R 777 lorelibrarium/storage
 sudo chmod -R 777 lorelibrarium/bootstrap
 
+# Crie a view relatorio_livros
+docker exec -i lorelibrarium_mysql mysql -u lorelibrarium -plorelibrarium lorelibrarium < sql/view.sql
+
 # Rode o "npm run dev" na pasta do projeto lorelibrarium
 npm run dev
 
