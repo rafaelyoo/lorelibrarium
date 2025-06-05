@@ -100,9 +100,9 @@ sudo chmod -R 777 lorelibrarium/bootstrap
 # Rode o "npm run dev" na pasta do projeto lorelibrarium
 npm run dev
 
-# Conecte no banco com as credências no .env.example utilizando 
-# o host localhost e crie a view do arquivo sql/view.sql
-
 # Para rodar os testes 
 docker exec -e XDEBUG_MODE=coverage -it lorelibrarium_app php artisan test --coverage
 ```
+
+- Instruções para utilização do sistema:  
+  👉 [Tutorial](https://docs.google.com/document/d/1I8ssy0piHXLHgi3QbrcYreBoHla9vqKNPUqUt0-_YOI/edit?usp=sharing)
